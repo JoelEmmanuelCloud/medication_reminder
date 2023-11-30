@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medication List</title>
+</head>
+<body>
+    <h1>Medication List</h1>
+    {% for medication in medications %}
+        <p>{{ medication.name }} - {{ medication.dosage }}</p>
+    {% endfor %}
+</body>
+</html>
