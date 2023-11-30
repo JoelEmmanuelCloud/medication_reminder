@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from .models import Medication
 
-# Create your views here.
+def medication_list(request):
+    medications = Medication.objects.all()
+    return render(request, 'medication_list.html', {'medications': medications})
+
