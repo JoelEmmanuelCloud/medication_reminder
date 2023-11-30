@@ -4,6 +4,9 @@ from django.db import models
 class Medication(models.Model):
     name = models.CharField(max_length=255)
     dosage = models.CharField(max_length=50)
+    
+    class Meta:
+        app_label = 'reminder'
 
 class Reminder(models.Model):
     medication = models.ForeignKey(Medication, on_delete=models.CASCADE)
