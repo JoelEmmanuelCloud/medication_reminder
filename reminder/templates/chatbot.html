@@ -1,0 +1,131 @@
+<!-- reminder/templates/chatbot.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medication Reminder Chatbot</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for the chatbot */
+        body {
+            background-image: url('{% static "reminder/images/image.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            color: #fff;  /* Set text color to white for better visibility on the background image */
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);  /* Darker semi-transparent navbar background */
+        }
+
+        .navbar-brand-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            max-width: 40px;
+            border-radius: 50%;  /* Make the logo circular */
+            margin-right: 10px;
+        }
+
+        .navbar-brand-text {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;  /* Maintain the previous color for the app name */
+            text-decoration: none;  /* Remove underline */
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);  /* Darker semi-transparent card background */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        #chat-container {
+            height: 300px;
+            overflow-y: auto;
+            background-color: rgba(0, 0, 0, 0.5);  /* Darker semi-transparent chat container background */
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .user-message {
+            text-align: right;
+            color: #007bff;
+            background-color: #d6eafc;
+            padding: 8px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .bot-message {
+            text-align: left;
+            color: #28a745;
+            background-color: #e1f7d8;
+            padding: 8px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            margin-top: 20px;
+        }
+
+        #user-input {
+            border-radius: 5px 0 0 5px;
+        }
+
+        #send-btn {
+            border-radius: 0 5px 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand-container">
+                <img src="{% static 'reminder/images/mylogo.png' %}" alt="Logo" class="navbar-logo">
+                <a class="navbar-brand-text" href="#">Medication Reminder Chat</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="chat-form" method="post">
+                            {% csrf_token %}
+                            <div id="chat-container">
+                                <!-- Chat messages will be displayed here -->
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="user-input" class="form-control" placeholder="Type your message...">
+                                <button type="button" id="send-btn" class="btn btn-primary">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS via CDN (required for some Bootstrap features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include your JavaScript file -->
+    <script src="{% static 'reminder/js/chatbot.js' %}"></script>
+</body>
+</html>
