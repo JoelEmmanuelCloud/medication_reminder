@@ -1,10 +1,13 @@
 // static/js/chatbot.js
+const chatContainer = document.getElementById('chat-container');
+
 document.addEventListener('DOMContentLoaded', function () {
-    const chatContainer = document.getElementById('chat-container');
     const userInput = document.getElementById('user-input');
     const sendBtn = document.getElementById('send-btn');
 
-    sendBtn.addEventListener('click', function () {
+    sendBtn.addEventListener('click', function (event) {
+        event.preventDefault();  // Prevent the default form submission
+
         const userMessage = userInput.value;
 
         // Add user message to the chat container
@@ -20,15 +23,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function sendUserMessage(userMessage) {
     // Send the user message to the server using AJAX
-    const csrfToken = document.getElementsByName('csrfmiddlewaretoken')[0].value;
+    const csrfToken = document.getElementsByName('csrfmiddlewaretoken')[0]?.value; // Use optional chaining
 
-    fetch('/reminder/chatbot/', {
+    const formData = new FormData();
+    formData.append('user_message', userMessage);
+
+    fetch('/chatbot/', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
             'X-CSRFToken': csrfToken,
         },
-        body: JSON.stringify({ user_message: userMessage }),
+        body: formData,
     })
     .then(response => response.json())
     .then(data => {
