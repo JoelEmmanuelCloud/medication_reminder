@@ -1,0 +1,220 @@
+[
+    {
+        "pattern": "hello|hi|hey",
+        "response": "Hello! How can I assist you today?"
+    },
+    {
+        "pattern": "bye|goodbye",
+        "response": "Goodbye! Take care."
+    },
+
+    {
+        "pattern": "hello|hi|hey",
+        "response": "Hello! How can I assist you today?"
+    },
+
+    {
+        "pattern": "medication|drug|prescription",
+        "response": "If you have any questions about a specific medication, feel free to ask, and I'll do my best to help."
+    },
+    {
+        "pattern": "headache|pain in the head",
+        "response": "I'm sorry to hear you're experiencing a headache. It's essential to consult with a healthcare professional for personalized advice."
+    },
+    {
+        "pattern": "fever|high temperature",
+        "response": "A fever can be a sign of various health issues. Make sure to stay hydrated and consider consulting with a healthcare provider."
+    },
+    {
+        "pattern": "What should I do for a sore throat",
+        "response": "For a sore throat, try staying hydrated, gargling with salt water, and resting. If it persists, consult a healthcare professional."
+    },
+    {
+        "pattern": "Tell me about aspirin",
+        "response": "Aspirin is a common over-the-counter medication used to reduce pain, inflammation, and fever. However, it's crucial to follow recommended dosages and consult with a doctor."
+    },
+    {
+        "pattern": "cough|persistent cough",
+        "response": "I see you're dealing with a cough. Coughs can have various causes. Have you noticed any other symptoms along with the cough?"
+    },
+    {
+        "pattern": "blood pressure|hypertension",
+        "response": "Monitoring your blood pressure is important for heart health. Have you been checking your blood pressure regularly, and do you have any concerns about it?"
+    },
+    {
+        "pattern": "diabetes|blood sugar",
+        "response": "Managing diabetes involves keeping an eye on blood sugar levels. Are you currently monitoring your blood sugar, and do you have any specific questions about diabetes management?"
+    },
+    {
+        "pattern": "anxiety|stress",
+        "response": "Dealing with anxiety or stress can be challenging. Is there something specific causing stress, or do you need general tips on managing stress levels?"
+    },
+    {
+        "pattern": "allergies|allergic reaction",
+        "response": "Allergies can be bothersome. Have you identified any specific allergens, and do you need advice on managing allergy symptoms?"
+    },
+    {
+        "pattern": "vaccination|vaccine",
+        "response": "Vaccination is a crucial part of preventive healthcare. Do you have questions about specific vaccines or need information on staying up-to-date with vaccinations?"
+    },
+    {
+        "pattern": "depression|mental health",
+        "response": "Mental health is important. If you're comfortable, could you share a bit more about what you're experiencing, or would you like general tips for maintaining mental well-being?"
+    },
+    {
+        "pattern": "weight loss|healthy weight",
+        "response": "Maintaining a healthy weight is beneficial for overall health. Are you looking for tips on weight management or information on creating a balanced diet?"
+    },
+    {
+        "pattern": "sleep|insomnia",
+        "response": "Quality sleep is crucial. Are you having trouble sleeping, and would you like suggestions on improving sleep hygiene?"
+    },
+    {
+        "pattern": "rash|skin irritation",
+        "response": "Skin rashes can be tricky. Have you noticed any specific triggers for the rash, and would you like advice on managing or preventing it?"
+    },
+    {
+        "pattern": "vitamin deficiency|nutrition",
+        "response": "Nutrition plays a key role in preventing vitamin deficiencies. Are you curious about specific vitamins, or do you need guidance on maintaining a balanced diet?"
+    },
+    {
+        "pattern": "pregnancy|maternity",
+        "response": "Pregnancy is a unique journey. Are you currently pregnant, planning to be, or do you have specific questions about prenatal care?"
+    },
+    {
+        "pattern": "antibiotics|antibiotic resistance",
+        "response": "Antibiotics are effective but should be used responsibly. Have you been prescribed antibiotics recently, or do you have questions about antibiotic resistance?"
+    },
+    {
+        "pattern": "heart health|cardiovascular",
+        "response": "Taking care of your heart is essential. Have you noticed any specific concerns with your cardiovascular health, or are you looking for general tips on heart health?"
+    },
+    {
+        "pattern": "exercise|physical activity",
+        "response": "Regular exercise is beneficial. Do you currently have an exercise routine, or would you like help creating a personalized fitness plan?"
+    },
+    {
+        "pattern": "joint pain|arthritis",
+        "response": "Joint pain can be challenging. Are you experiencing joint pain, and would you like guidance on managing it or information about potential causes?"
+    },
+    {
+        "pattern": "diet|nutrition",
+        "response": "Maintaining a balanced diet is crucial. Do you have specific dietary preferences or restrictions, or are you looking for general advice on healthy eating?"
+    },
+    {
+        "pattern": "dental care|oral hygiene",
+        "response": "Oral hygiene is vital for overall health. Are you currently following a dental care routine, or do you have questions about oral health practices?"
+    },
+    {
+        "pattern": "STD|sexual health",
+        "response": "Sexual health is important. Are you practicing safe sex, and do you have questions about sexual health or STD prevention?"
+    },
+    {
+        "pattern": "concussion|head injury",
+        "response": "Head injuries are serious. Have you recently experienced a head injury, and are you currently experiencing any symptoms that concern you?"
+    },
+    {
+        "pattern": "asthma|respiratory",
+        "response": "Respiratory health is crucial. Do you have asthma or respiratory concerns, and would you like information on managing symptoms or preventing flare-ups?"
+    },
+    {
+        "pattern": "thyroid|hormone levels",
+        "response": "Maintaining thyroid health is important. Have you noticed any symptoms related to your thyroid, and would you like information on getting it checked?"
+    },
+    {
+        "pattern": "sunburn|skin protection",
+        "response": "Sunburns can be painful. Have you recently experienced a sunburn, and do you need advice on soothing the skin or preventing future sun damage?"
+    },
+    {
+        "pattern": "How are you|How are you doing",
+        "response": "Thank you for asking. I'm just a computer program, but I'm here to help!"
+    },
+    {
+        "pattern": "What is your name|Who are you",
+        "response": "I'm a virtual assistant designed to provide information about medications and health."
+    },
+    {
+        "pattern": "medication|drug|prescription",
+        "response": "If you have any questions about a specific medication, feel free to ask, and I'll do my best to help."
+    },
+    {
+        "pattern": "I am sick",
+        "response": "I'm sorry to hear that you're not feeling well. I'm here to help! To provide you with the best assistance, could you please share more details about your symptoms? Are you experiencing specific pains, discomfort, or any other symptoms that you'd like to discuss?"
+    },
+    {
+        "pattern": "I am not feeling well",
+        "response": "I'm sorry to hear that you're not feeling well. I'm here to help! To provide you with the best assistance, could you please share more details about your symptoms? Are you experiencing specific pains, discomfort, or any other symptoms that you'd like to discuss?"
+    },
+    {
+        "pattern": "pain",
+        "response": "I'm sorry to hear that. Where you feeling the pain?"
+    },
+    {
+        "pattern": "I am not feeling fine",
+        "response": "I'm sorry to hear that you're not feeling well. I'm here to help! To provide you with the best assistance, could you please share more details about your symptoms? Are you experiencing specific pains, discomfort, or any other symptoms that you'd like to discuss?"
+    },
+    {
+        "pattern": "headache|pain in the head",
+        "response": "I'm sorry to hear you're experiencing a headache. It's essential to consult with a healthcare professional for personalized advice."
+    },
+    {
+        "pattern": "fever|high temperature",
+        "response": "A fever can be a sign of various health issues. Make sure to stay hydrated and consider consulting with a healthcare provider."
+    },
+    {
+        "pattern": "What should I do for a sore throat",
+        "response": "For a sore throat, try staying hydrated, gargling with salt water, and resting. If it persists, consult a healthcare professional."
+    },
+    {
+        "pattern": "Tell me about aspirin",
+        "response": "Aspirin is a common over-the-counter medication used to reduce pain, inflammation, and fever. However, it's crucial to follow recommended dosages and consult with a doctor."
+    },
+    {
+        "pattern": "cough|persistent cough",
+        "response": "I see you're dealing with a cough. Coughs can have various causes. Have you noticed any other symptoms along with the cough?"
+    },
+    {
+        "pattern": "blood pressure|hypertension",
+        "response": "Monitoring your blood pressure is important for heart health. Have you been checking your blood pressure regularly, and do you have any concerns about it?"
+    },
+    {
+        "pattern": "diabetes|blood sugar",
+        "response": "Managing diabetes involves keeping an eye on blood sugar levels. Are you currently monitoring your blood sugar, and do you have any specific questions about diabetes management?"
+    },
+    {
+        "pattern": "anxiety|stress",
+        "response": "Dealing with anxiety or stress can be challenging. Is there something specific causing stress, or do you need general tips on managing stress levels?"
+    },
+    {
+        "pattern": "allergies|allergic reaction",
+        "response": "Allergies can be bothersome. Have you identified any specific allergens, and do you need advice on managing allergy symptoms?"
+    },
+    {
+        "pattern": "How are you|How are you doing",
+        "response": "Thank you for asking. I'm just a computer program, but I'm here to help!"
+    },
+    {
+        "pattern": "What is your name|Who are you",
+        "response": "I'm a virtual assistant designed to provide information about medications and health."
+    },
+    {
+        "pattern": "medication|drug|prescription",
+        "response": "If you have any questions about a specific medication, feel free to ask, and I'll do my best to help."
+    },
+    {
+        "pattern": "headache|pain in the head",
+        "response": "I'm sorry to hear you're experiencing a headache. It's essential to consult with a healthcare professional for personalized advice."
+    },
+    {
+        "pattern": "fever|high temperature",
+        "response": "A fever can be a sign of various health issues. Make sure to stay hydrated and consider consulting with a healthcare provider."
+    },
+    {
+        "pattern": "What should I do for a sore throat",
+        "response": "For a sore throat, try staying hydrated, gargling with salt water, and resting. If it persists, consult a healthcare professional."
+    },
+    {
+        "pattern": "Tell me about aspirin",
+        "response": "Aspirin is a common over-the-counter medication used to reduce pain, inflammation, and fever. However, it's crucial to follow recommended dosages and consult with a doctor."
+    }
+]
