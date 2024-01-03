@@ -1,0 +1,42 @@
+[
+    {
+        "model": "reminder.medication",
+        "pk": 1,
+        "fields": {
+            "name": "Aspirin",
+            "dosage": "75mg",
+            "frequency": "daily",
+            "start_date": "2023-01-15"
+        }
+    },
+    {
+        "model": "reminder.medication",
+        "pk": 2,
+        "fields": {
+            "name": "Ibuprofen",
+            "dosage": "200mg",
+            "frequency": "as needed",
+            "start_date": "2023-02-10"
+        }
+    },
+    {
+        "model": "reminder.medication",
+        "pk": 3,
+        "fields": {
+            "name": "Antihistamine",
+            "dosage": "10mg",
+            "frequency": "daily",
+            "start_date": "2023-03-05"
+        }
+    },
+    {
+        "model": "reminder.medication",
+        "pk": 4,
+        "fields": {
+            "name": "Vitamin D",
+            "dosage": "1000 IU",
+            "frequency": "weekly",
+            "start_date": "2023-04-01"
+        }
+    }
+]

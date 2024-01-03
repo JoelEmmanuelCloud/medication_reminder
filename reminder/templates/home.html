@@ -1,0 +1,36 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Medication Reminder{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div id="main-content" class="mt-4">
+            {% if user.is_authenticated %}
+                <!-- Display content for authenticated users -->
+                <h2>Welcome back, {{ user.username }}!</h2>
+                <p>Explore the Medication Reminder and manage your medications efficiently.</p>
+                <a href="{% url 'medication_list' %}" class="btn btn-primary">View Medication List</a>
+                <a href="{% url 'chatbot' %}" class="btn btn-secondary">Chat with Chatbot</a>
+                <a href="{% url 'add_medication' %}" class="btn btn-success">Add Medication</a>
+                <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a> <!-- Logout button -->
+            {% else %}
+                <!-- Display content for non-authenticated users -->
+                <h2>Welcome to Medication Reminder</h2>
+                <p>Manage your medications efficiently with our Medication Reminder. Never miss a dose!</p>
+                <a href="{% url 'register' %}" class="btn btn-primary">Register</a> <!-- Register button -->
+                <a href="{% url 'login' %}" class="btn btn-secondary">Login</a> <!-- Login button -->
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        var mainContent = document.getElementById('main-content');
+        mainContent.style.padding = '40px';
+        mainContent.style.borderRadius = '10px';
+        mainContent.style.boxShadow = '0px 0px 10px rgba(0, 0, 0, 0.1)';
+        document.body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        mainContent.style.background = '#333';
+        mainContent.style.color = '#fff';
+    </script>
+{% endblock %}

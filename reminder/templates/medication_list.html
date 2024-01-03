@@ -1,0 +1,29 @@
+<!-- templates/medication_list.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-center mb-4" style="color: white;">Medication List</h2>
+                    {% for medication in medications %}
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h3 class="card-title" style="color: white;">{{ medication.name }} - {{ medication.dosage }}</h3>
+                                <ul>
+                                    {% for reminder in medication.reminders.all %}
+                                        <li>
+                                            {{ reminder.reminder_time }} - {% if reminder.is_completed %}Completed{% else %}Pending{% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                                <a href="{% url 'add_medication_reminder' medication.id %}" class="btn btn-sm btn-outline-success">Add Medication Reminder</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

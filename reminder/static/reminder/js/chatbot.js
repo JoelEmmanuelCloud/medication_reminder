@@ -1,11 +1,27 @@
-// static/js/chatbot.js
 const chatContainer = document.getElementById('chat-container');
 
 document.addEventListener('DOMContentLoaded', function () {
     const userInput = document.getElementById('user-input');
     const sendBtn = document.getElementById('send-btn');
+    const chatForm = document.getElementById('chat-form');  // Add this line
 
     sendBtn.addEventListener('click', function (event) {
+        event.preventDefault();  // Prevent the default form submission
+
+        const userMessage = userInput.value;
+
+        // Add user message to the chat container
+        chatContainer.innerHTML += `<div class="user-message">${userMessage}</div>`;
+
+        // Send user message to the server
+        sendUserMessage(userMessage);
+
+        // Clear the user input field
+        userInput.value = '';
+    });
+
+    // Add the following block
+    chatForm.addEventListener('submit', function (event) {
         event.preventDefault();  // Prevent the default form submission
 
         const userMessage = userInput.value;
@@ -37,9 +53,9 @@ function sendUserMessage(userMessage) {
     })
     .then(response => response.json())
     .then(data => {
-        // Add chatbot response to the chat container
+        // Add medical chatbot response to the chat container
         const botResponse = data.bot_response;
-        chatContainer.innerHTML += `<div class="bot-message">Chatbot: ${botResponse}</div>`;
+        chatContainer.innerHTML += `<div class="bot-message">Medical Bot: ${botResponse}</div>`;
     })
     .catch(error => console.error('Error:', error));
 }

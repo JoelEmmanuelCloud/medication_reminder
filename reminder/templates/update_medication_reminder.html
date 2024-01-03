@@ -1,0 +1,14 @@
+<!-- update_medication_reminder.html -->
+{% extends 'base.html' %}
+
+{% block title %}Update Medication Reminder{% endblock %}
+
+{% block content %}
+    <h2>Update Medication Reminder</h2>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Update Reminder</button>
+    </form>
+    <a href="{% url 'medication_list' %}">Back to Medication List</a>
+{% endblock %}

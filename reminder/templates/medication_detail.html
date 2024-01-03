@@ -1,0 +1,32 @@
+<!-- templates/medication_detail.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <span class="medication-name text-white">{{ medication.name }}</span> - <span class="medication-dosage text-white">{{ medication.dosage }}</span>
+                </h2>
+            </div>
+            <div class="card-body">
+                {% if reminders %}
+                    <h3 class="text-white">Reminders:</h3>
+                    <ul class="list-group">
+                        {% for reminder in reminders %}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                {{ reminder.reminder_time }} - {% if reminder.is_completed %}<span class="badge bg-success">Completed</span>{% else %}<span class="badge bg-warning">Pending</span>{% endif %}
+                                <a href="{% url 'delete_medication_reminder' reminder.id %}" class="btn btn-sm btn-outline-danger">Delete</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No reminders for this medication.</p>
+                {% endif %}
+            </div>
+            <div class="card-footer">
+                <a href="{% url 'medication_list' %}" class="btn btn-secondary">Back to Medication List</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
